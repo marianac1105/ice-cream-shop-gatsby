@@ -1,5 +1,7 @@
 import React from 'react'
 import HeroStyle from "./hero.module.css"
+import { FaAsterisk } from "react-icons/fa";
+import cx from 'classnames';
 
 export default function Hero() {
     return (
@@ -10,17 +12,17 @@ export default function Hero() {
 </h2>
 <h1 class={HeroStyle.headline}>The Ice Cream Shop</h1>
 <div class={HeroStyle.headlineDescription}>
-    <div class="separator">
-        <div class="lin line-left"></div>
-        <div class="asterisk">
-            <i class="fas fa-asterisk"></i>
+    <div class={HeroStyle.separator}>
+        <div class={cx(HeroStyle.line, HeroStyle.lineLeft)}></div>
+        <div class={HeroStyle.asterisk}>
+            <FaAsterisk/>
         </div>
-        <div class="line line-right"></div>
+        <div class={cx(HeroStyle.line, HeroStyle.lineRight)}></div>
 
     </div>
     <div class="single-animation">
         <h5>Ready to be opened</h5>
-        {/* <a href="#" class="btn cta-btn"></a> */}
+        <button class={cx(HeroStyle.btn)}>Explore</button>
     </div>
 
 </div>

@@ -1,9 +1,9 @@
 import React from 'react'
-import footerStyle from "./footer.module.css"
+import FooterStyle from "./footer.module.css"
 
 export default function Footer() {
     return (
-        <footer className={footerStyle.footer} >
+        <footer className={FooterStyle.footer} >
       <p>© 2020 Mariana Cerqueira</p>
     </footer>
     )

@@ -1,7 +1,18 @@
 @import "../styles/variables.css"
 
+@media screen and (min-width: 900px) {
+    article {
+      padding: 1rem 3rem;
+    }
+  }
 
 
+.logo img{
+    max-width: 200px;
+    margin-top: 10rem;
+    
+    
+}
 
 .nav{
     height: 7.2rem;
@@ -89,15 +100,10 @@ button.menu-toggle:focus{
     letter-spacing: 2px;
     margin-right: 2px;
     transition: color.5s;
+    color: #ffffff;
 }
 
-nav-link:hover{
-    color: var(-secondary-font-color);
+.nav-link:hover{
+    color: var(--secondary-font-color);
 }
 
-.logo img{
-    max-width: 200px;
-    margin-top: 2rem;
-    
-    
-}
